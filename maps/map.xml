@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<Map>
+
+	<Size x="32" y="32" z="16"/>
+	<Location x="-12" y="3" z="-12"/>
+
+	<Object name="sky">
+		<Sphere checked="false" lighted="false">
+			<Location x="-32" y="-32" z="-32"/>
+			<Size radius="64"/>
+			<Texture>textures/sky.png</Texture>
+		</Sphere>
+	</Object>
+
+	<Object name="floor">
+		<Cube>
+			<Location x="-16" y="-0.1" z="-16"/>
+			<Size x="32" y="0.1" z="32"/>
+			<Texture>textures/wood.png</Texture>
+		</Cube>
+	</Object>
+
+	<Object name="walls">
+		<Cube>
+			<Location x="-16" y="0" z="-16"/>
+			<Size x="32" y="5" z="1"/>
+			<Texture>textures/rock.png</Texture>
+		</Cube>
+		<Cube>
+			<Location x="-16" y="0" z="-16"/>
+			<Size x="1" y="5" z="32"/>
+			<Texture>textures/rock.png</Texture>
+		</Cube>
+		<Cube>
+			<Location x="-16" y="0" z="16"/>
+			<Size x="32" y="5" z="1"/>
+			<Texture>textures/rock.png</Texture>
+		</Cube>
+		<Cube>
+			<Location x="16" y="0" z="-16"/>
+			<Size x="1" y="5" z="32"/>
+			<Texture>textures/rock.png</Texture>
+		</Cube>
+	</Object>
+
+	<Object>
+		<Cube>
+			<Location x="-8" y="0" z="-5"/>
+			<Size x="1" y="1" z="16"/>
+			<Rotation y="45"/>
+			<Texture>textures/hazard.png</Texture>
+		</Cube>
+	</Object>
+
+	<Object>
+		<Cube>
+			<Location x="-2" y="-1" z="-2"/>
+			<Size x="1" y="1" z="16"/>
+			<Rotation x="330"/>
+			<Texture>textures/hazard.png</Texture>
+		</Cube>
+	</Object>
+
+	<Object>
+		<Cube>
+			<Next>maps/map.xml</Next>
+			<Location x="-2" y="6" z="10"/>
+			<Size x="10" y="0.1" z="10"/>
+			<Rotation x="30"/>
+			<Texture>textures/marble.png</Texture>
+		</Cube>
+	</Object>
+
+	<Object name="tree">
+		<Disk checked="false">
+			<Location x="10" y="0.5" z="10"/>
+			<Size radius="1"/>
+			<Rotation y="0"/>
+			<Texture>textures/leaves.png</Texture>
+		</Disk>
+		<Disk checked="false">
+			<Location x="10" y="0.5" z="10"/>
+			<Size radius="1"/>
+			<Rotation y="45"/>
+			<Texture>textures/leaves.png</Texture>
+		</Disk>
+		<Disk checked="false">
+			<Location x="10" y="0.5" z="10"/>
+			<Size radius="1"/>
+			<Rotation y="90"/>
+			<Texture>textures/leaves.png</Texture>
+		</Disk>
+		<Disk checked="false">
+			<Location x="10" y="0.5" z="10"/>
+			<Size radius="1"/>
+			<Rotation y="135"/>
+			<Texture>textures/leaves.png</Texture>
+		</Disk>
+		<Cylinder>
+			<Location x="9.95" y="0.75" z="9.95"/>
+			<Size x="0.1" y="0.1" z="0.75"/>
+			<Rotation x="90"/>
+			<Texture>textures/wood.png</Texture>
+		</Cylinder>
+	</Object>
+
+</Map>
+
